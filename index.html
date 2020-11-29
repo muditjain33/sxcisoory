@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div id="win" class="hide">
+        YOU WON THE GAME !!!
+    </div>
+    <div id="lose" class="hide">
+        YOU LOST THE GAME !!!
+    </div>
+    <div id="orientlock">
+        PLEASE CORRECT THE ORIENTATION !!!
+    </div>
+    <div id="main">
+        <object class="no" data="img/rock.svg" type="image/svg+xml"> </object>
+        <object class="no" data="img/paper.svg" type="image/svg+xml"> </object>
+        <object class="no" data="img/scissor.svg" type="image/svg+xml"> </object>
+        <header>
+            <div class="reset"> RESET </div>
+            <div class="heading">Stone Paper Scissors</div>
+        </header>
+        <section>
+            <div id="div1">
+                <div class="box" id="rock">
+                    <img src="img/rock.svg" alt="">
+                </div>
+                <div class="box" id="paper">
+                    <br>
+                    <img src="img/paper.svg" alt="">
+                </div>
+                <div class="box" id="scissors">
+                    <br>
+                    <img src="img/scissor.svg" alt="">
+                </div>
+            </div>
+            <div id="div2">
+                YOU
+                <br>
+                <div class="inline" id="player_obj">
+                    <img src="" alt="" id="player_img" height="80vh">
+                </div>
+                <div class="inline" id="player_mark">0</div>
+                <br>
+                COMPUTER
+                <br>
+                <div class="inline" id="comp_obj">
+                    <img src="" alt="" id="comp_img" height="80vh">
+                </div>
+                <div class="inline" id="comp_mark">0</div>
+            </div>
+        </section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    </div>
+</body>
+
+</html>
